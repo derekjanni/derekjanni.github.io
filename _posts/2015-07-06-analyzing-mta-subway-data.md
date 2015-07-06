@@ -13,11 +13,6 @@ Even worse, if you're trying to get *rich* New Yorkers to contribute to your cau
 
 So we see that a few stations see a lot of traffic and many see very little by comparison. What are the busiest ones?
 
-![MTA Subway Stations With Highest Entry Traffic in June](https://raw.githubusercontent.com/derekjanni/derekjanni.github.io/master/images/Screen%20Shot%202015-07-06%20at%2012.54.01%20PM.png)
-
-Since these `matplotlib` graphs are really unreadable, here's the top 5 what we're looking at:
-
-
 ![Table of Subway Station Traffic](https://raw.githubusercontent.com/derekjanni/derekjanni.github.io/master/images/Screen%20Shot%202015-07-06%20at%201.03.12%20PM.png)
 
 Looks like 42nd Street is the place to be. What about particular times of the day? If you're going to be successful in your campaign, you need to know the _exact_ point in spacetime where you're supposed to be to get the most rich New Yorkers to hand over their money. As it turns out, this was one of the more interesting parts of the investigation.
