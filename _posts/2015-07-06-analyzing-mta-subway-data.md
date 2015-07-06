@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Get Noticed In The City.
+title: How To Get Noticed In The City
 ---
 
 If you've ever ridden a New York City subway, you've seen that there are a *lot* of people that use these things. It's not hard to see why: they're dirty, hot, jam-packed with pissed off commuters.. wait.. actually it's that they're the only way to get around here that doesn't risk you getting rammed into the guardrails of the BQE.
@@ -26,7 +26,7 @@ Since these `matplotlib` labels are totally unreadable, here's the top 5 what we
 | 34 St. Penn Station - Lines ACE | 2113730 | 
 | 42 St. Port Authority Bus Terminal - Lines ACENQRS1237 | 2035646 | 
 
-Great. What about particular times of the day? If you're going to be successful in your campaign, you need to know the _exact_ point in spacetime where you're supposed to be to get the most rich New Yorkers to hand over their money. As it turns out, this was one of the more interesting parts of the investigation.
+Looks like 42nd Street is the place to be. What about particular times of the day? If you're going to be successful in your campaign, you need to know the _exact_ point in spacetime where you're supposed to be to get the most rich New Yorkers to hand over their money. As it turns out, this was one of the more interesting parts of the investigation.
 
 If you look at MTA's raw data (link), you'll see something odd - the data is reported roughly every 4 hours in batches. In the aggregate, you get data points from almost every minute of the day, but there are huge clusters that fall at times like 12pm, 4pm, and 8pm since these are the "normal" reporting times for the terminals. Another `matplotlib` graphic
 
