@@ -40,4 +40,18 @@ If I had too much time on my hands, I'd do this for every station. If I wanted t
 
 <iframe width="700" height="530" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://yongcho.maps.arcgis.com/apps/Embed/index.html?webmap=fb685d8082c64d7c94ff27e23434e8c5&amp;extent=-74.0967,40.6705,-73.7794,40.8128&amp;zoom=true&amp;scale=true&amp;theme=light"></iframe>
 
+As it turns out, there's little conflict of interest between finding stations in rich areas and stations with high traffic - at least in New York City they're one in the same. As I've hinted at throughout the article, there's probably more to this than just going to the busiest place and handing out flyers - if you've ever walked around in a city, you've noticed that the vast majority of things handed out by strangers end up in the trash bin, with less than a couple seconds of consideration.
 
+If it were me, I'd try something a little more cryptic: people absolutely lose it when they can't figure out what your ad is about and what they hell it's doing in Grand Central Station. Billboards like these:
+
+![Bad Marketing](http://cdn2.business2community.com/wp-content/uploads/2014/05/Forever-21-billboard.jpg)
+
+Should be banned - they're so boring that I practically fall asleep at the wheel. But give me something like:
+
+![Good Marketing](http://www.liberalamerica.org/wp-content/uploads/2013/10/blueberry-billboard.jpg)
+
+And I'll search high and low to figure out exactly why blueberries are important, who made the billboard, and everything else about this bizarre creation that there is to know. The bottom line is:
+
+![The Punchline](http://www.thenerd411.com/wp-content/uploads/2015/04/knowing-is-half-the-battlejpg1425907458645.jpeg)
+
+And the other half is having marketing strategies that don't suck. Be viral or go back to watching mad men.
