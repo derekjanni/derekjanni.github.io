@@ -13,7 +13,7 @@ Even worse, if you're trying to get *rich* New Yorkers to contribute to the caus
 
 So we see that a few stations see a lot of traffic and many see a huge amount. What are the busiest ones?
 
-![MTA Subway Stations With Highest Entry Traffic in June]()
+![MTA Subway Stations With Highest Entry Traffic in June](https://raw.githubusercontent.com/derekjanni/derekjanni.github.io/master/images/Screen%20Shot%202015-07-06%20at%2012.54.01%20PM.png)
 
 Since these `matplotlib` labels are totally unreadable, here's the top 5 what we're looking at:
 
