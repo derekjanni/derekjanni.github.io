@@ -19,7 +19,7 @@ Since these `matplotlib` labels are totally unreadable, here's the top 5 what we
 
 
 | Station Name | Total June Entry Traffic |
-|-------------|------------------------|
+|:-------------:|:------------------------:|
 | 42 St. Grand Central Stn. - Lines: 4567S | 3794145| 
 | 34 St. Herald Square - Lines BDFMNQR | 2981461 |
 | 42 St. Times Sqaure - Lines 1237ACENQRS| 2267054 | 
