@@ -36,7 +36,7 @@ So.. If you're harrassing people in a subway station, you want to be there betwe
 
 ![Grand Central Station Hourly Data](https://raw.githubusercontent.com/derekjanni/derekjanni.github.io/master/images/GST%20binning.png)
 
-If I had too much time on my hands, I'd do this for every station. If I wanted to make something that ties all of this back to the original question, I'd do what my friend Yong did (link here). Check out his map of subway stations (the orange bubbles) mapped against median income in 2014 (the darker, the richer). Originally, I just stole the map from the US census, he overlayed some geo-coded data to the original product to give you, oh cherished reader, a cool (and interactive) way of looking at our findings for this project.
+If I had too much time on my hands, I'd do this for every station. If I wanted to make something that ties all of this back to the original question, I'd do what my friend <a href ="http://www.yongcho.com/">Yong</a> did. Check out his map of subway stations (the orange bubbles) mapped against median income in 2014 (the darker, the richer). Originally, I stole the map from the US census data archives, he overlayed some geo-coded data to the original product to give you a cool (and interactive) way of looking at our findings for this project.
 
 <iframe width="700" height="530" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://yongcho.maps.arcgis.com/apps/Embed/index.html?webmap=fb685d8082c64d7c94ff27e23434e8c5&amp;extent=-74.0967,40.6705,-73.7794,40.8128&amp;zoom=true&amp;scale=true&amp;theme=light"></iframe>
 
