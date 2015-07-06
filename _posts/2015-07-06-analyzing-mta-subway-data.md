@@ -18,13 +18,7 @@ So we see that a few stations see a lot of traffic and many see a huge amount. W
 Since these `matplotlib` labels are totally unreadable, here's the top 5 what we're looking at:
 
 
-| Station Name | Total June Entry Traffic |
-|:-------------:|:------------------------:|
-| 42 St. Grand Central Stn. - Lines: 4567S | 3794145| 
-| 34 St. Herald Square - Lines BDFMNQR | 2981461 |
-| 42 St. Times Sqaure - Lines 1237ACENQRS| 2267054 | 
-| 34 St. Penn Station - Lines ACE | 2113730 | 
-| 42 St. Port Authority Bus Terminal - Lines ACENQRS1237 | 2035646 | 
+![Table of Subway Station Traffic](https://raw.githubusercontent.com/derekjanni/derekjanni.github.io/master/images/Screen%20Shot%202015-07-06%20at%201.03.12%20PM.png)
 
 Looks like 42nd Street is the place to be. What about particular times of the day? If you're going to be successful in your campaign, you need to know the _exact_ point in spacetime where you're supposed to be to get the most rich New Yorkers to hand over their money. As it turns out, this was one of the more interesting parts of the investigation.
 
