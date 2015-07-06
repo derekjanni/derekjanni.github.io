@@ -24,7 +24,7 @@ Looks like 42nd Street is the place to be. What about particular times of the da
 
 If you look at MTA's raw data (link), you'll see something odd - the data is reported roughly every 4 hours in batches. In the aggregate, you get data points from almost every minute of the day, but there are huge clusters that fall at times like 12pm, 4pm, and 8pm since these are the "normal" reporting times for the terminals. Another `matplotlib` graphic
 
-~[Rough Distribution MTA Subway Entrances by Time of Day in June](https://raw.githubusercontent.com/derekjanni/derekjanni.github.io/master/images/benson%20first%20attempt%20binning.png)
+![Rough Distribution MTA Subway Entrances by Time of Day in June](https://raw.githubusercontent.com/derekjanni/derekjanni.github.io/master/images/benson%20first%20attempt%20binning.png)
 
 The problem with this view is that these bins don't tell you a whole lot - when you look at the first spike around 8-9am, you're really seeing the number of people who arrived in the 4-hour chunk of time prior to the data being reported. What if you could smooth this out into a more shapely distribution?
 
