@@ -8,7 +8,7 @@ In case you're too lazy to read the docs for [Beautiful Soup](https://beautiful-
 [Requests](http://docs.python-requests.org/en/latest/), here's a quick and intro to webscraping in Python. The most basic 
 functionality is demo'd below:
 
-!> ```python
+ ```python
 import requests
 from bs4 import BeautifulSoup
 url = "http://pitchfork.com/"
@@ -27,9 +27,12 @@ link = find_all('a', href=True)
 Now one caveat is that if you want if a particular element, you'll have to do a little nit-picking to get that out.
 
 ```python
-specific_anchor_text = soup.find_all(class_='alt')[0].find_all('a')[1].text
+anchor_text = soup.find_all(class_='alt')[0].find_all('a')[1].text
 ```
 
 Notice that you can adjust which element you're pointing at by ajusting the `[i]` that you're calling. This the part that can
 be both really frustrating if you're bad and really cool if you're less bad. 
 
+![Hmmm...](http://evolvingweb.ca/sites/default/files/styles/large/public/web-scraper-670x300.png?itok=9YlboANH)
+
+The fun part about webscraping in Python is that you have access to a lot of different tools after you've got the data: you can load it into a SQLite db using the `sqlite` module or into a `pandas` dataframe so you can analyze them. If you want to see an example of how webscraping can be used in a full scale project (along with some linear modeling tricks in Python) check out [my recent project](https://github.com/derekjanni/Mining-Movie-Reviews) on GitHub.
