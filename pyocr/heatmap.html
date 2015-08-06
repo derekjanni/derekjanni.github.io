@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<!--
+ ##########################################################################
+ Patrick.Brockmann@lsce.ipsl.fr
+ ##########################################################################
+-->
+
+<style>
+body {
+    background-image: url(https://watercoloredhands.files.wordpress.com/2010/09/dsc_0003.jpg);
+    color: white;
+}
+</style>
+
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script src="heatmap.js"></script>
+<link rel="stylesheet" href="heatmap.css" />
+
+<head>
+
+<script>
+$(document).ready(function() {
+   heatmap_display("knn_data/knn_data.json", "#heatmap_data", "Spectral");
+   heatmap_display("knn_data/knn_numbers.json", "#heatmap_numbers", "Spectral");
+   heatmap_display("knn_data/knn_caps.json", "#heatmap_caps", "Spectral");
+   heatmap_display("knn_data/knn_lower.json", "#heatmap_lower", "Spectral");
+});
+
+</script>
+
+</head>
+
+<body>
+
+<p>Which Data?:</p>
+<select id="data_subset">
+  <option value="null" selected='selected'> ------- </option>
+  <option value="data"> All Data </option>
+  <option value="numbers">Numbers</option>
+  <option value="caps">Capital Letters</option>
+  <option value="lower">Lowercase Letters</option>
+</select>
+
+
+<div>
+<p class='heatmap' fontsize>
+This is a visualization of the <a href="https://en.wikipedia.org/wiki/Confusion_matrix" >Confusion Matrix</a> for my KNN classifier on the Chars74k dataset. Read my <a href=''>blog post</a>, or see the complete project on my <a href=''>Github</a> profile to see the process that generated these graphs!
+</p>
+
+</div>
+
+<div class="drop-down-show-hide" id="heatmap_data"></div>
+<div class="drop-down-show-hide" id="heatmap_numbers"></div>
+<div class="drop-down-show-hide" id="heatmap_caps"></div>
+<div class="drop-down-show-hide" id="heatmap_lower"></div>
+
+</body>
+
+<script>
+$('.drop-down-show-hide').hide();
+
+$('#data_subset').change(function () {
+    $('.drop-down-show-hide').hide()
+    $('#heatmap_' + this.value).show();
+
+});
+</script>
+</html>

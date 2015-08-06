@@ -1,0 +1,62 @@
+<html>
+
+<head>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+</body style='background-color:black'>
+<section class="project_main_container">
+    <ul>
+        <li>
+            <div class="project_container">
+                <div class="project_media">
+                    <a href='http://derekjanni.github.io'><img class="project_image" src="img/1.Bmp"></img></a>
+                    <h1>Blog</h1>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="project_container">
+                <div class="project_media">
+                    <a href='ipynb.html'><img class="project_image" src="img/6.Bmp"></img></a>
+                    <h1>iPython</h1>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="project_container">
+                <div class="project_media">
+                    <a href='neural.html'><img class="project_image" src="img/5.Bmp"></img></a>
+                    <h1>Neural Nets</h1>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="project_container">
+                <div class="project_media">
+                    <a href='heatmap.html'><img class="project_image" src="img/2.Bmp"></img>
+                    <h1>Confusion Matrix</h1>
+                </div>
+            </div>
+        </li>
+     
+    </ul>
+
+    <h1>Hype Train</h1>
+</section>
+</body>
+
+<script>
+$('#thumbnail').hover(makeBigger, returnToOriginalSize);
+	function makeBigger() {
+    	$(this).css({height: '+=10%', width: '+=10%'});
+		}
+	function returnToOriginalSize() {
+    	$(this).css({height: "", width: ""});
+		}
+
+</script>
+
+</html>
