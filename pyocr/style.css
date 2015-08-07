@@ -1,3 +1,8 @@
+p {
+    vertical-align: text-top;
+    font-family: "Arial", Helvetica, Sans-Serif;
+}
+
 
 ol, ul {
     list-style: table;
