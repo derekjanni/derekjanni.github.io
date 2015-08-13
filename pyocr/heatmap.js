@@ -25,12 +25,12 @@ function heatmap_display(url, heatmapId, paletteName, classes) {
 
     //==================================================
     // http://bl.ocks.org/mbostock/3680958
-    //function zoom() {
-    //	svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-    //}
+    function zoom() {
+    	svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+    }
 
-    // define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
-    //var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
+    define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
+    var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
 
     //==================================================
     //var viewerWidth = $(document).width()*1.5;
@@ -64,7 +64,7 @@ function heatmap_display(url, heatmapId, paletteName, classes) {
         svg = d3.select(heatmapId).append("svg")
             .attr("width", viewerWidth)
             .attr("height", viewerHeight)
-	    //.call(zoomListener)
+	    .call(zoomListener)
             .append("g")
             .attr("transform", "translate(" + viewerPosLeft + "," + viewerPosTop + ")");
 
