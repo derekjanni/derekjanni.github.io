@@ -15,6 +15,6 @@ The secret here is that pre-processing has an amazing effect on results. When I 
 
 It turns out that nudging, or duplicating existing images in different orientations, has a big part to play in improving results. Just a small shift of 1 pixel to the left, right, top and bottom of the frame (on each image) effectively increases the size of your training data by 5 times - allowing the computer to recognize images that are aligned differently. While I have yet to implement [affine transformations](https://en.wikipedia.org/wiki/Affine_transformation) into my dataset, i suspect that they would also greatly improve performance in cases where the input data is skewed.
 
-For a more in-depth look at my work in the field, visit my project site, [PyOCR](derekjanni.github.io/pyocr/) to see the code and some visualitations (the confusion matrix is the most interesting, if you ast me) that came out of my work thus far. Evenutally, I will have an app embedded that can handle user-uploaded images or show examples characters that the computer is trying to classify.
+For a more in-depth look at my work in the field, visit my project site, [PyOCR](/pyocr/) to see the code and some visualitations (the confusion matrix is the most interesting, if you ast me) that came out of my work thus far. Evenutally, I will have an app embedded that can handle user-uploaded images or show examples characters that the computer is trying to classify.
 
 
