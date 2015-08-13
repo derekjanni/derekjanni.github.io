@@ -2,7 +2,7 @@ var classesNumber = 10,
     cellSize = 25;
 
 //#########################################################
-function heatmap_display(url, heatmapId, paletteName, classes) {
+function heatmap_display(url, heatmapId, paletteName) {
 
     //##########################################################################
     // Patrick.Brockmann@lsce.ipsl.fr
