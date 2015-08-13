@@ -1,8 +1,9 @@
 var classesNumber = 10,
-    cellSize = 25;
+    cellSize = 35;
 
 //#########################################################
 function heatmap_display(url, heatmapId, paletteName) {
+
 
     //##########################################################################
     // Patrick.Brockmann@lsce.ipsl.fr
@@ -29,14 +30,12 @@ function heatmap_display(url, heatmapId, paletteName) {
     	svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
     }
 
-    define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
+    //define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
     var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
 
     //==================================================
     var viewerWidth = $(document).width();
-    //var viewerWidth = classes*30;
     var viewerHeight = $(document).height();
-    //var viewerHeight = classes*30;
     var viewerPosTop = 200;
     var viewerPosLeft = 100;
 
