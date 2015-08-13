@@ -50,10 +50,11 @@ function heatmap_display(url, heatmapId, paletteName) {
     //==================================================
     d3.json(url, function(error, data) {
 
-        //console.log(data);
+        console.log(data);
         var arr = data.data;
         var row_number = arr.length;
         var col_number = arr[0].length;
+        var ind = data.index;
         //console.log(col_number, row_number);
 
         var colorScale = d3.scale.quantize()
@@ -189,7 +190,9 @@ function heatmap_display(url, heatmapId, paletteName) {
                 d3.select('#colLabel_' + i).classed("hover", true);
                 d3.select('#rowLabel_' + j).classed("hover", true);
                 if (d != null) {
-                    tooltip.html('<div class="heatmap_tooltip">' + d.toFixed(3) + '</div>');
+                    tooltip.html('<div class="heatmap_tooltip">' + (d*100).toFixed(2) + "%"
+                        +" correct:" + ind[j] 
+                        +" guess:" + ind[i]  +'</div>');
                     tooltip.style("visibility", "visible");
                 } else
                     tooltip.style("visibility", "hidden");
@@ -200,7 +203,7 @@ function heatmap_display(url, heatmapId, paletteName) {
                 tooltip.style("visibility", "hidden");
             })
             .on("mousemove", function(d, i) {
-                tooltip.style("top", (d3.event.pageY - 55) + "px").style("left", (d3.event.pageX - 60) + "px");
+                tooltip.style("top", (d3.event.pageY - 100) + "px").style("left", (d3.event.pageX - 60) + "px");
             })
             .on('click', function() {
                 //console.log(d3.select(this));
