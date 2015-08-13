@@ -33,10 +33,10 @@ function heatmap_display(url, heatmapId, paletteName, classes) {
     var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
 
     //==================================================
-    //var viewerWidth = $(document).width()*1.5;
-    var viewerWidth = classes*30;
-    //var viewerHeight = $(document).height()*1.5;
-    var viewerHeight = classes*30;
+    var viewerWidth = $(document).width();
+    //var viewerWidth = classes*30;
+    var viewerHeight = $(document).height();
+    //var viewerHeight = classes*30;
     var viewerPosTop = 200;
     var viewerPosLeft = 100;
 
