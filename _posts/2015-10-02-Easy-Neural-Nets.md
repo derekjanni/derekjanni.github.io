@@ -76,12 +76,12 @@ code that you should be asking about:
 
 ![A Simple Network for a Simpler time](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/350px-Artificial_neural_network.svg.png)
 
-## Softmax (and other output non-linearities)
+### Softmax (and other output non-linearities)
 
 This is implemented mostly out of convention because it works. There are a host of other non-linearities in `lasagne` and `nolearn`, but 
 this one is well studied and works well for classification problems in Neural Nets. If you want all the mathy details, [Wikipedia is your friend](https://en.wikipedia.org/wiki/Softmax_function)
 
-## Nesterov Momentum and SGD in DNN
+### Nesterov Momentum and SGD in DNN
 
 Like a lot of problems, Neural Nets benefit from a Stochastic Gradient Descent approach. Nesterov Momentum is just one of the concepts 
 of how to implement this, and apparently is a very popular method across applications. Feel free to experiment (and report back)
@@ -90,7 +90,7 @@ with others included in lasagne, like `adagrad` and `rmsprop` if you so choose.
 You may notice a pattern with this: there's a lot of tinkering that can be done with Neural Nets. By all means, tinker, just know 
 what to expect when you mess with things!
 
-## Parameter Tuning and Why Not To Do It
+### Parameter Tuning and Why Not To Do It
 
 In my experience, messing with the learning rate and momentum just isn't worth it: you're more likely to improve performance
 if you mess with the overall structure of the neural net. These two parameters refer to the corresponding SGD parameters, a slow learning 
@@ -98,10 +98,9 @@ rate encourages incremental improvements, while a large momentum prevents gettin
 around with what these do, but be forewarned that if you just twiddle the knobs and hope for the best here, you're probably not
 going to get awesome results.
 
-## Regression
+### Regression
 
-Regression and classification are separate tasks: don't ask your computer to do regression when you want classification, or vice versa. 
-Bad things will happen, trust me
+Regression and classification are separate tasks: don't ask your computer to do regression when you want classification, or vice versa. Bad things will happen, trust me
 
 # A More Complex Example (CNN)
 
@@ -161,32 +160,30 @@ model.fit(X_train, Y_train)
 
 ![Holy Layers](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/img/Conv2-9x5-Conv2Conv2.png)
 
-Some thoughts:
-
-## When To Use This
+### When To Use This
 
 On images. CNN's really lack context for 1-D feature spaces. Notice that grayscale images are 2-D features in a 2-D feature space.
 You could probably do this with 3-D data as well, but that's harder to come by than simple image data.
 
-## Why We're Using Weird Input Dimensions
+### Why We're Using Weird Input Dimensions
 
 The short reason is that this is just how `nolearn` works with images. The reshape idea is that the first dimension is the number of 
 images in question, the second dimension is the number of color channels (1, in grayscale) and the last two are the (x, y) size of the input.
 Square images are reccomended for sanity - you can't just go stuffing arbitrarily sized images into a CNN and expect sanity.
 
-## LabelEncoder() and Why You Should Use It
+### LabelEncoder() and Why You Should Use It
 
 The module currently lacks support for string labels, so it's good to work around them using sklearn's LabelEncoder. It's also important
 that your inputs are in the right format - anything but float32/int32 can lead to the ultimate destruction of your CNN dreams.
 
-## Holy Layers, Batman!
+### Holy Layers, Batman!
 
 This model is significantly more complex than the standard Neural Net. You should read [Daniel Nouri's walkthrough of nolearn](http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/)
 If you want to understand more about these layers and different configurations of them. As a sidenote: you'll realize upon reading
 Nouri's post that my post is very similar. His post is great, but it's also specific to a problem and I wanted to show how
 nolearn can be generalized - as well as explain some of the things that aren't addressed in his post.
 
-## A Note on Architecture
+### A Note on Architecture
 
 Whenever you want to deploy a Neural Net, keep architecture in mind. You can build willy-nilly things all day, but there should
 (ideally) be some reason you choose one Archictecture over another. See [this journal article](http://www.ro.feri.uni-mb.si/ICIT03/tech_prog/Tutorial_Wilamowski.pdf) for a relatively easy to understand explanation
