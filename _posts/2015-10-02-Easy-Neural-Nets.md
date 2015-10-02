@@ -1,3 +1,7 @@
+---
+layout: post
+title: Introduction to Deep Neural Network Programming in Python
+---
 
 # Introduction to DNN in Python
 
