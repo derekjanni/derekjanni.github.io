@@ -3,8 +3,6 @@ layout: post
 title: Introduction to Deep Neural Network Programming in Python
 ---
 
-# Introduction to DNN in Python
-
 If there's one thing that gets everyone stoked on AI it's Deep Neural Networks (DNN). From Google's pop-computational-art experiment, 
 DeepDream, to the more applied pursuits of face recognition, object classification and optical character recognition (aside: see
 [PyOCR](https://github.com/derekjanni)) Neural Nets are showing themselves to be a huge value-add for all sorts of problems that
