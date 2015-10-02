@@ -8,7 +8,7 @@ DeepDream, to the more applied pursuits of face recognition, object classificati
 [PyOCR](https://github.com/derekjanni)) Neural Nets are showing themselves to be a huge value-add for all sorts of problems that
 rely on machine learning.
 
-!(Wow, such network)[http://parse.ele.tue.nl/cluster/0/fig1.png]
+![Wow, such network](http://parse.ele.tue.nl/cluster/0/fig1.png)
 
 I'm not here to teach you how these things work: there's a lot to it and there's a large part of the feature extraction that is still 
 poorly understood, even by the people who design these things in the first place. Instead, I'm here to help the hapless Python
@@ -190,7 +190,7 @@ how the human eye is believed to work! Cool!
 
 # Closing Thoughts
 
-Please read http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/
+Please read [this post](http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/)
 for a more applied tutorial. This man does awesome work and I don't want to steal his post, but rather, give my readers a simple, 
 boiled down version that they can play with. Sadly, there __are__ some errors in Nouri's code that have been fixed by recent updates to his module,
 so cross check with this post if you run into any errors. 
